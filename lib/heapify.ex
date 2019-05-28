@@ -1,6 +1,7 @@
 defmodule Heapify do
   @moduledoc """
   Heapify a list. Return a min heap from the list.
+  Not very efficient(O(n^2log(n)) for this)
   """
 
   @doc """
