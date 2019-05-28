@@ -10,7 +10,7 @@ defmodule HeapifyTest do
   end
 
   test "it can heapify a very long list" do
-    list = Enum.map(0..9_999, fn _ -> :rand.uniform(10_000) end)
+    list = Enum.map(0..999, fn _ -> :rand.uniform(10_000) end)
 
     list = Heapify.run(list)
     assert Enum.min(list) == hd(list)
